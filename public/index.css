@@ -1,0 +1,18 @@
+label {
+  display: inline-block;
+  width: 50px;
+}
+
+textarea {
+  width: 220px;
+  height: 200px;
+}
+
+table {
+  border-collapse: collapse;
+}
+
+td {
+  border: 2px solid black;
+  padding: 5px
+}

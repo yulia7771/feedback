@@ -1,0 +1,30 @@
+doctype html
+
+html
+  head
+    link(rel="stylesheet", href="bootstrap.min.css")
+    script(src="jquery-3.2.1.min.js")
+    script(src="popper.min.js")
+    script(src="bootstrap.min.js")
+    script(src="app.js")
+  body
+    .container
+      .row
+        .col
+        .col
+          form#form(action='/feedback', method="post")
+            h1 Форма отзыва
+            .form-group
+              label(for='email') E-mail:
+              input.form-control#email(type='text', name='email')
+            .form-group
+              label(for='name') Имя:
+              input.form-control#name(type='text', name='name')
+            .form-group
+              textarea.form-control#text(name='text')
+            .form-group
+              button.btn.btn-primary Отправить
+          #result
+          a(href="feedbacks") Отзывы
+        .col
+

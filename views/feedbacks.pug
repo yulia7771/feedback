@@ -1,0 +1,22 @@
+doctype html
+
+html
+  head
+    link(rel="stylesheet", href="bootstrap.min.css")
+    script(src="jquery-3.2.1.min.js")
+    script(src="popper.min.js")
+    script(src="bootstrap.min.js")
+    title Feedbacks
+  body
+    .container
+      table.table
+        tr
+          th Имя
+          th E-mail
+          th Текст
+        each f in feedbacks
+          tr
+            td= f.name
+            td= f.email
+            td= f.text
+      a(href="/") На главную
